@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { getUsers, createUser, findUser, updateUser, deleteUser, addFriend, deleteFriend } = require('../../controllers/user-controller');
+const { getUsers, createUser, findUser, updateUser, deleteUser, addFriend, deleteFriend } = require('../../controllers/userController');
 
 router.route('/').get(getUsers); // GET all users
 router.route('/:userId').get(findUser); // GET a single user
